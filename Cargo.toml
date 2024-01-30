@@ -1,0 +1,17 @@
+[package]
+name = "jni-verify"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+jni = "0.21.1"
+lazy_static = "1.4.0"
+proc-macro-error = "1.0.4"
+proc-macro2 = "1.0.78"
+quote = "1.0.35"
+regex = "1.10.3"
+syn = { version = "2.0.48", features = ["full", "extra-traits"] }
+trybuild = { version = "1.0.89", features = ["diff"] }
